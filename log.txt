@@ -1,0 +1,1698 @@
+Señal tipo 2 recibida. Soy 15584
+Señal tipo 1 recibida. Soy 15584
+Señal tipo 2 recibida. Soy 15894
+Señal tipo 1 recibida. Soy 15894
+Señal tipo 2 recibida. Soy 19945
+Señal tipo 1 recibida. Soy 19945
+Señal tipo 2 recibida. Soy 24025
+Señal tipo 1 recibida. Soy 24025
+Señal tipo 2 recibida. Soy 24361
+Señal tipo 1 recibida. Soy 24361
+Señal tipo 2 recibida. Soy 25517
+Señal tipo 1 recibida. Soy 25517
+Señal tipo 2 recibida. Soy 26748
+Señal tipo 1 recibida. Soy 26748
+Señal tipo 2 recibida. Soy 28494
+Señal tipo 1 recibida. Soy 28494
+Señal tipo 2 recibida. Soy 29530
+Señal tipo 1 recibida. Soy 29530
+Señal tipo 2 recibida. Soy 31108
+Señal tipo 1 recibida. Soy 31108
+Señal tipo 2 recibida. Soy 31188
+Señal tipo 1 recibida. Soy 31188
+Señal tipo 2 recibida. Soy 31364
+Señal tipo 1 recibida. Soy 31364
+Señal tipo 2 recibida. Soy 33152
+Señal tipo 1 recibida. Soy 33152
+Señal tipo 1 recibida. Soy 33462
+Señal tipo 2 recibida. Soy 42999
+Señal tipo 1 recibida. Soy 42999
+Señal tipo 2 recibida. Soy 43954
+Señal tipo 1 recibida. Soy 43954
+Señal tipo 2 recibida. Soy 54976
+Señal tipo 1 recibida. Soy 54976
+Señal tipo 2 recibida. Soy 56263
+Señal tipo 1 recibida. Soy 56263
+Señal tipo 2 recibida. Soy 58209
+Señal tipo 1 recibida. Soy 58209
+Señal tipo 2 recibida. Soy 59193
+Señal tipo 1 recibida. Soy 59193
+Señal tipo 2 recibida. Soy 62912
+Señal tipo 1 recibida. Soy 62912
+Señal tipo 1 recibida. Soy 63344
+Señal tipo 2 recibida. Soy 64026
+Señal tipo 1 recibida. Soy 64026
+Señal tipo 2 recibida. Soy 67484
+Señal tipo 1 recibida. Soy 67484
+Señal tipo 1 recibida. Soy 69841
+Señal tipo 1 recibida. Soy 71729
+Señal tipo 1 recibida. Soy 72073
+Señal tipo 2 recibida. Soy 75179
+Señal tipo 1 recibida. Soy 75179
+Señal tipo 2 recibida. Soy 78132
+Señal tipo 1 recibida. Soy 78132
+Señal tipo 2 recibida. Soy 78796
+Señal tipo 1 recibida. Soy 78796
+Señal tipo 2 recibida. Soy 79168
+Señal tipo 1 recibida. Soy 79168
+Señal tipo 2 recibida. Soy 80008
+Señal tipo 1 recibida. Soy 80008
+Señal tipo 2 recibida. Soy 82091
+Señal tipo 1 recibida. Soy 82091
+Señal tipo 2 recibida. Soy 83115
+Señal tipo 1 recibida. Soy 83115
+Señal tipo 2 recibida. Soy 83609
+Señal tipo 1 recibida. Soy 83609
+Señal tipo 2 recibida. Soy 84857
+Señal tipo 1 recibida. Soy 84857
+Señal tipo 1 recibida. Soy 86631
+Señal tipo 2 recibida. Soy 91434
+Señal tipo 1 recibida. Soy 91434
+Señal tipo 2 recibida. Soy 92388
+Señal tipo 1 recibida. Soy 92388
+Señal tipo 2 recibida. Soy 95956
+Señal tipo 1 recibida. Soy 95956
+Señal tipo 2 recibida. Soy 97685
+Señal tipo 1 recibida. Soy 97685
+Señal tipo 2 recibida. Soy 99375
+Señal tipo 1 recibida. Soy 99375
+Señal tipo 2 recibida. Soy 99621
+Señal tipo 1 recibida. Soy 99621
+Señal tipo 2 recibida. Soy 99761
+Señal tipo 1 recibida. Soy 99761
+Señal tipo 2 recibida. Soy 100683
+Señal tipo 1 recibida. Soy 100683
+Señal tipo 2 recibida. Soy 101217
+Señal tipo 1 recibida. Soy 101217
+Señal tipo 2 recibida. Soy 101313
+Señal tipo 1 recibida. Soy 101313
+Señal tipo 1 recibida. Soy 101505
+Señal tipo 2 recibida. Soy 101601
+Señal tipo 1 recibida. Soy 101601
+Señal tipo 2 recibida. Soy 102067
+Señal tipo 1 recibida. Soy 102067
+Señal tipo 2 recibida. Soy 102571
+Señal tipo 1 recibida. Soy 102571
+Señal tipo 2 recibida. Soy 109101
+Señal tipo 1 recibida. Soy 109101
+Señal tipo 1 recibida. Soy 109783
+Señal tipo 2 recibida. Soy 110439
+Señal tipo 1 recibida. Soy 110439
+Señal tipo 2 recibida. Soy 111655
+Señal tipo 1 recibida. Soy 111655
+Señal tipo 2 recibida. Soy 111777
+Señal tipo 1 recibida. Soy 111777
+Señal tipo 2 recibida. Soy 112923
+Señal tipo 1 recibida. Soy 112923
+Señal tipo 2 recibida. Soy 113097
+Señal tipo 1 recibida. Soy 113097
+Señal tipo 2 recibida. Soy 113731
+Señal tipo 1 recibida. Soy 113731
+Señal tipo 1 recibida. Soy 115375
+Señal tipo 2 recibida. Soy 116151
+Señal tipo 1 recibida. Soy 116151
+Señal tipo 2 recibida. Soy 118056
+Señal tipo 1 recibida. Soy 118056
+Señal tipo 2 recibida. Soy 118554
+Señal tipo 1 recibida. Soy 118554
+Señal tipo 2 recibida. Soy 120860
+Señal tipo 1 recibida. Soy 120860
+Señal tipo 2 recibida. Soy 121558
+Señal tipo 1 recibida. Soy 121558
+Señal tipo 2 recibida. Soy 123467
+Señal tipo 1 recibida. Soy 123467
+Señal tipo 2 recibida. Soy 124301
+Señal tipo 1 recibida. Soy 124301
+Señal tipo 2 recibida. Soy 124679
+Señal tipo 1 recibida. Soy 124679
+Señal tipo 2 recibida. Soy 125169
+Señal tipo 1 recibida. Soy 125169
+Señal tipo 2 recibida. Soy 125229
+Señal tipo 1 recibida. Soy 125229
+Señal tipo 2 recibida. Soy 126345
+Señal tipo 1 recibida. Soy 126345
+Señal tipo 1 recibida. Soy 126533
+Señal tipo 2 recibida. Soy 126855
+Señal tipo 1 recibida. Soy 126855
+Señal tipo 2 recibida. Soy 128535
+Señal tipo 1 recibida. Soy 128535
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 129129
+Señal tipo 1 recibida. Soy 129129
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 129871
+Señal tipo 1 recibida. Soy 129871
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 1 recibida. Soy 131129
++1
+Señal tipo 1 recibida. Soy 131131
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 1 recibida. Soy 131147
++1
+Señal tipo 1 recibida. Soy 131149
++1
+Señal tipo 1 recibida. Soy 131151
++1
++1
+Señal tipo 1 recibida. Soy 131155
++1
+Señal tipo 1 recibida. Soy 131157
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 131175
+Señal tipo 1 recibida. Soy 131175
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 131720
+Señal tipo 1 recibida. Soy 131720
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 1 recibida. Soy 131738
++1
++1
++1
+Señal tipo 1 recibida. Soy 131744
++1
+Señal tipo 1 recibida. Soy 131746
++1
++1
++1
+Señal tipo 1 recibida. Soy 131752
++1
++1
++1
++1
+Señal tipo 1 recibida. Soy 131760
++1
+Señal tipo 1 recibida. Soy 131762
++1
++1
++1
+Señal tipo 1 recibida. Soy 131768
++1
+Señal tipo 1 recibida. Soy 131770
+Señal tipo 2 recibida. Soy 131772
+Señal tipo 1 recibida. Soy 131772
++1
++1
+Señal tipo 1 recibida. Soy 131774
++1
+Señal tipo 1 recibida. Soy 131776
++1
+Señal tipo 1 recibida. Soy 131778
++1
++1
++1
+Señal tipo 2 recibida. Soy 131784
+Señal tipo 1 recibida. Soy 131784
++1
++1
+Señal tipo 1 recibida. Soy 131788
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 131915
+Señal tipo 1 recibida. Soy 131915
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
+Señal tipo 2 recibida. Soy 131991
+Señal tipo 1 recibida. Soy 131991
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
++1
