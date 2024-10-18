@@ -1,3 +1,4 @@
+#include <assert.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,8 +6,8 @@
 #include <time.h>
 #include <unistd.h>
 
-pid_t *pid_arr;
-int    n;
+static pid_t *pid_arr;
+static int    n;
 
 void
 handler(int s)
@@ -53,7 +54,9 @@ main(int argc, char *argv[])
     printf("Cuantos hijos quieres crear? ");
     scanf(" %d", &n);
 
-    pid_arr = malloc(sizeof(pid_t) * n);
+    assert(n >= 0);
+
+    pid_arr = calloc(n, sizeof(pid_t));
 
     for (int i = 0; i < n; i++)
     {
