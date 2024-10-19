@@ -6,6 +6,10 @@
 #include <time.h>
 #include <unistd.h>
 
+#define BBG "\e[40;37m"
+#define GBG "\e[42;30m"
+#define RST "\e[0m"
+
 static int shared_fd;
 
 int
@@ -13,15 +17,12 @@ get_posicion(int pid)
 {
     int pos = -1;
 
-    puts("Asking for position");
     kill(pid, SIGUSR1);
-    puts("Waiting for response");
     pause(); // wait for signal
              // when position is written a
              // signal is sent
-    fsync(shared_fd);
+    lseek(shared_fd, -sizeof(int), SEEK_CUR);
     read(shared_fd, &pos, sizeof(int));
-    printf("Response: %d\n", pos);
 
     return pos;
 }
@@ -29,17 +30,14 @@ get_posicion(int pid)
 int
 get_direccion(int pid)
 {
-    int dir;
+    int dir = -1;
 
-    puts("Asking for direction");
     kill(pid, SIGUSR2);
-    puts("Waiting for response");
     pause(); // wait for signal
              // when dirition is written a
              // signal is sent
-    fsync(shared_fd);
+    lseek(shared_fd, -sizeof(int), SEEK_CUR);
     read(shared_fd, &dir, sizeof(int));
-    printf("Response: %d\n", dir);
 
     return dir;
 }
@@ -48,9 +46,8 @@ static void
 jugador_handler(int sig)
 {
     static int pos = -1;
+    static int dir;
     int        npos;
-
-    printf("Into handler [Jugador] sig:%d\n", sig);
 
     switch (sig)
     {
@@ -58,19 +55,19 @@ jugador_handler(int sig)
         case SIGUSR1:
             do
             {
+                printf("[Mover jugador]\n");
                 if (pos < 0)
-                    printf("Posicion [0,9]: ");
+                    printf(BBG "[0,9]:" RST " ");
                 else
-                    printf("Posicion [%d,%d]: ", pos < 2 ? 0 : pos - 2,
+                    printf(BBG "[%d,%d]:" RST " ", pos < 2 ? 0 : pos - 2,
                            pos > 7 ? 9 : pos + 2);
 
                 scanf("%d", &npos);
-            } while (pos >= 0 && abs(pos - npos) > 2 && pos <= 9);
+            } while (pos >= 0 && npos >= 0 && abs(pos - npos) > 2 && npos <= 9);
 
             pos = npos;
             write(shared_fd, &pos, sizeof(int));
             fsync(shared_fd);
-            puts("Written");
 
             // Avisar al padre de que ya esta el dato en
             // el archivo
@@ -80,11 +77,14 @@ jugador_handler(int sig)
 
         // obtener direccion pelota
         case SIGUSR2:
-            printf("Direccion pelota [0,9]: ");
-            scanf("%d", &pos);
-            write(shared_fd, &pos, sizeof(int));
+            do
+            {
+                printf(BBG "Direccion pelota [0,9]:" RST " ");
+                scanf("%d", &dir);
+            } while (!(0 <= dir && dir <= 9));
+
+            write(shared_fd, &dir, sizeof(int));
             fsync(shared_fd);
-            puts("Written");
 
             // Avisar al padre de que ya esta el dato en
             // el archivo
@@ -98,15 +98,13 @@ static void
 maquina_handler(int sig)
 {
     static int pos = -1;
+    static int dir;
     int        npos;
-
-    printf("Into handler [Maquina] sig:%d\n", sig);
 
     switch (sig)
     {
         // Obtener nueva posicion
         case SIGUSR1:
-            printf("Getting M pos\n");
             do
             {
                 npos = rand() % 10;
@@ -116,26 +114,21 @@ maquina_handler(int sig)
 
             write(shared_fd, &pos, sizeof(int));
             fsync(shared_fd);
-            puts("Written");
 
             // Avisar al padre de que ya esta el dato en
             // el archivo
             kill(getppid(), SIGUSR1);
-
             break;
 
         // obtener direccion pelota
         case SIGUSR2:
-            printf("Getting M dir\n");
-            pos = rand() % 10;
-            write(shared_fd, &pos, sizeof(int));
+            dir = rand() % 10;
+            write(shared_fd, &dir, sizeof(int));
             fsync(shared_fd);
-            puts("Written");
 
             // Avisar al padre de que ya esta el dato en
             // el archivo
             kill(getppid(), SIGUSR1);
-
             break;
     }
 }
@@ -169,24 +162,32 @@ enum Turno
 int
 es_punto(int *marcador, int jpos, int mpos, int dir, int turno)
 {
-    switch (turno)
+    switch ((turno + 1) % 2)
     {
         case JUGADOR:
-            if (abs(mpos - dir) > 2)
+            if (abs(mpos - dir) > 3)
             {
                 ++marcador[turno];
                 printf("Punto de J\n");
+                printf("Marcador: " GBG "[J %d - %d M]" RST "\n",
+                       marcador[JUGADOR], marcador[MAQUINA]);
                 return 1;
             }
+            else
+                printf("La maquina devuelve la bola\n");
             break;
 
         case MAQUINA:
-            if (abs(jpos - dir) > 2)
+            if (abs(jpos - dir) > 3)
             {
                 ++marcador[turno];
                 printf("Punto de M\n");
+                printf("Marcador: " GBG "[J %d - %d M]" RST "\n",
+                       marcador[JUGADOR], marcador[MAQUINA]);
                 return 1;
             }
+            else
+                printf("El jugador devuelve la bola\n");
             break;
     }
     return 0;
@@ -205,26 +206,36 @@ main_loop(int jugador, int maquina)
 
     while (marcador[JUGADOR] < 10 && marcador[MAQUINA] < 10)
     {
+        // Posiciones iniciales
         turno = rand() % 2;
-        printf("Saca %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
+        jpos  = get_posicion(jugador);
+        mpos  = get_posicion(maquina);
+
+        printf("-> Saca %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
         do
         {
+            printf("-> J: %d\n"
+                   "   M: %d\n",
+                   jpos, mpos);
+            // Obtener direccion de la bola
             switch (turno)
             {
                 case JUGADOR:
-                    jpos = get_posicion(jugador);
+                    dir = get_direccion(jugador);
+                    printf("Direccion de la bola: %d\n", dir);
                     mpos = get_posicion(maquina);
-                    dir  = get_direccion(jugador);
                     break;
 
                 case MAQUINA:
+                    dir = get_direccion(maquina);
+                    printf("Direccion de la bola: %d\n", dir);
                     jpos = get_posicion(jugador);
-                    mpos = get_posicion(maquina);
-                    dir  = get_direccion(maquina);
                     break;
             }
 
+            // mover jugadores
             turno = (turno + 1) % 2;
+
         } while (!es_punto(marcador, jpos, mpos, dir, turno));
     }
     printf("Gana %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
@@ -243,9 +254,8 @@ parent_handler(int s)
             raise(SIGKILL);
         }
         case SIGUSR1:
-        {
-            printf("Recv SIGUSR1 [Parent] -> wake up\n");
-        }
+        case SIGUSR2:
+            break;
     }
     return;
 }
