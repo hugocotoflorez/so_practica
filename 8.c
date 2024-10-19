@@ -19,6 +19,7 @@ get_posicion(int pid)
     pause(); // wait for signal
              // when position is written a
              // signal is sent
+    fsync(shared_fd);
     read(shared_fd, &pos, sizeof(int));
     printf("Response: %d\n", pos);
 
@@ -36,6 +37,7 @@ get_direccion(int pid)
     pause(); // wait for signal
              // when dirition is written a
              // signal is sent
+    fsync(shared_fd);
     read(shared_fd, &dir, sizeof(int));
     printf("Response: %d\n", dir);
 
@@ -47,6 +49,8 @@ jugador_handler(int sig)
 {
     static int pos = -1;
     int        npos;
+
+    printf("Into handler [Jugador] sig:%d\n", sig);
 
     switch (sig)
     {
@@ -95,6 +99,8 @@ maquina_handler(int sig)
 {
     static int pos = -1;
     int        npos;
+
+    printf("Into handler [Maquina] sig:%d\n", sig);
 
     switch (sig)
     {
@@ -197,7 +203,7 @@ main_loop(int jugador, int maquina)
 
     srand(time(NULL));
 
-    while (marcador[0] < 10 && marcador[1] < 10)
+    while (marcador[JUGADOR] < 10 && marcador[MAQUINA] < 10)
     {
         turno = rand() % 2;
         printf("Saca %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
@@ -221,17 +227,25 @@ main_loop(int jugador, int maquina)
             turno = (turno + 1) % 2;
         } while (!es_punto(marcador, jpos, mpos, dir, turno));
     }
+    printf("Gana %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
 }
 
 void
 parent_handler(int s)
 {
     // other signals are recived but ignored
-    if (s == SIGTERM)
+    switch (s)
     {
-        close(shared_fd);
-        kill(-getpid(), SIGTERM);
-        raise(SIGKILL);
+        case SIGTERM:
+        {
+            close(shared_fd);
+            kill(-getpid(), SIGTERM);
+            raise(SIGKILL);
+        }
+        case SIGUSR1:
+        {
+            printf("Recv SIGUSR1 [Parent] -> wake up\n");
+        }
     }
     return;
 }
@@ -244,8 +258,7 @@ main(int argc, char *argv[])
 
     // crear archivo temporal
     // para compartir informacion
-    // shared_file = tmpfile();
-    shared_fd = open("shared", O_TRUNC | O_RDWR | O_CREAT, 0666);
+    shared_fd = open("shared.txt", O_RDWR | O_TRUNC | O_CREAT, 0666);
     assert(shared_fd >= 0);
 
     // crear proceso jugador
