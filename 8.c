@@ -10,7 +10,7 @@
 #define GBG "\e[40;32;1m"
 #define RST "\e[0m"
 
-#define MAXPOINTS 1
+#define MAXPOINTS 10
 
 static int shared_fd;
 
