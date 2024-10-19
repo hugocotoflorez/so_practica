@@ -7,8 +7,10 @@
 #include <unistd.h>
 
 #define BBG "\e[40;37m"
-#define GBG "\e[42;30m"
+#define GBG "\e[40;32;1m"
 #define RST "\e[0m"
+
+#define MAXPOINTS 1
 
 static int shared_fd;
 
@@ -167,7 +169,7 @@ es_punto(int *marcador, int jpos, int mpos, int dir, int turno)
         case JUGADOR:
             if (abs(mpos - dir) > 3)
             {
-                ++marcador[turno];
+                ++marcador[JUGADOR];
                 printf("Punto de J\n");
                 printf("Marcador: " GBG "[J %d - %d M]" RST "\n",
                        marcador[JUGADOR], marcador[MAQUINA]);
@@ -180,7 +182,7 @@ es_punto(int *marcador, int jpos, int mpos, int dir, int turno)
         case MAQUINA:
             if (abs(jpos - dir) > 3)
             {
-                ++marcador[turno];
+                ++marcador[MAQUINA];
                 printf("Punto de M\n");
                 printf("Marcador: " GBG "[J %d - %d M]" RST "\n",
                        marcador[JUGADOR], marcador[MAQUINA]);
@@ -204,7 +206,7 @@ main_loop(int jugador, int maquina)
 
     srand(time(NULL));
 
-    while (marcador[JUGADOR] < 10 && marcador[MAQUINA] < 10)
+    while (marcador[JUGADOR] < MAXPOINTS && marcador[MAQUINA] < MAXPOINTS)
     {
         // Posiciones iniciales
         turno = rand() % 2;
@@ -238,7 +240,7 @@ main_loop(int jugador, int maquina)
 
         } while (!es_punto(marcador, jpos, mpos, dir, turno));
     }
-    printf("Gana %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
+    printf("Gana %s\n", ((char *[2]) { "Jugador", "Maquina" })[(turno + 1) % 2]);
 }
 
 void
