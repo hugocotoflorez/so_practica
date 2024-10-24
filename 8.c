@@ -17,7 +17,7 @@ static int shared_fd;
 int
 get_posicion(int pid)
 {
-    int pos = -1;
+    int pos;
 
     kill(pid, SIGUSR1);
     pause(); // wait for signal
@@ -32,7 +32,7 @@ get_posicion(int pid)
 int
 get_direccion(int pid)
 {
-    int dir = -1;
+    int dir;
 
     kill(pid, SIGUSR2);
     pause(); // wait for signal
@@ -64,6 +64,7 @@ jugador_handler(int sig)
                     printf(BBG "[%d,%d]:" RST " ", pos < 2 ? 0 : pos - 2,
                            pos > 7 ? 9 : pos + 2);
 
+                fflush(stdout);
                 scanf("%d", &npos);
             } while (pos >= 0 && npos >= 0 && abs(pos - npos) > 2 && npos <= 9);
 
@@ -213,7 +214,7 @@ main_loop(int jugador, int maquina)
         jpos  = get_posicion(jugador);
         mpos  = get_posicion(maquina);
 
-        printf("-> Saca %s\n", ((char *[2]) { "Jugador", "Maquina" })[turno]);
+        printf("-> Saca %s\n", ((char *[]) { "Jugador", "Maquina" })[turno]);
         do
         {
             printf("-> J: %d\n"
